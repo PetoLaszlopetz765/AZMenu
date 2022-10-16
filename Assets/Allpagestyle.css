@@ -1,5 +1,5 @@
 html, body{
-  background: url('Assets/123.jfif') no-repeat center center fixed;
+  background: url('/Assets/123.jfif') no-repeat center center fixed;
   color:whitesmoke;
 }
 #all-page{
