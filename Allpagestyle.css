@@ -40,4 +40,29 @@ html, body{
   #pikk:hover{
     color: #c8f3f9;
   }
-    
+/*Banner*/
+#carimg{
+  max-height: calc(100%);
+  width: calc(100%);
+  object-fit: cover;
+  margin: auto auto;
+}
+
+.carousel{
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+max-height: calc(100% - 5vw);
+width: calc(90% - 5vw);
+overflow: hidden;
+margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+}
+
+.image-container{
+display: flex;
+transform: translateX(0);
+transition: transform 0.5s ease-in-out;
+}
+/*Banner eddig*/
+
