@@ -1,0 +1,43 @@
+html, body{
+  background: url('Assets/123.jfif') no-repeat center center fixed;
+  color:whitesmoke;
+}
+#all-page{
+  width:80%;
+  margin-right:auto;
+  margin-left:auto;
+  box-shadow:2px 2px 20px #c8f3f9;
+  height:auto;
+  background-color: hsla(0, 0%, 100%, .2);
+  position: absolute;
+  top: calc(18%);
+  left: 0;
+  right: 0;
+  display: block;}
+
+  #logoimg{
+    border-radius:100%;
+    height: 5px;
+    width: auto;
+    border:1px solid silver;
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+    height:30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top:5%;
+  }
+  #logoimg:hover {
+    transform: scale(1.1);
+    filter: grayscale(5%);
+    border:5px solid rgb(235, 118, 9);
+  }
+  #pikk{
+    margin-top: 30%;
+  }
+  #pikk:hover{
+    color: #c8f3f9;
+  }
+    
