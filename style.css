@@ -16,7 +16,6 @@ VARIABLES
   --green: #ec590a;
 }
 
-
 /* =======
 WRAPPER
 ======= */
@@ -24,7 +23,7 @@ WRAPPER
   font-family: 'Encode Sans Condensed', sans-serif;
   font-weight: 600;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   position: relative;
  
 }
@@ -47,16 +46,16 @@ BUTTON
 ====== */
 .btn {
   position: fixed;
-  height: calc(var(--btn-size)*1px);
-  width: calc(var(--btn-size)*1px);
-  bottom: calc((var(--offset-value))*1px);
-  left: calc(var(--offset-value)*1px);
+  height: calc(var(--btn-size)*0.0625rem);
+  width: calc(var(--btn-size)*0.0625rem);
+  bottom: calc((var(--offset-value))*0.0625rem);
+  left: calc(var(--offset-value)*0.0625rem);
   /*left: calc(50% - (var(--btn-size)/2*1px)); if you wish to center it */
-  /*border-radius: 50%;*/
+  /*border-radius: 50%*/
   background: #e7e3e3;
   cursor:pointer;
   margin: 0;
-  padding: 0 15px;
+  padding: 0 0.93rem;
   border: none;
   z-index: 100;
   user-select: none;
@@ -79,10 +78,10 @@ BUTTON
 }
 
 #toggle-btn span {
-  margin-top: -4px;
+  margin-top: -0.25rem;
 }
 #toggle-btn span + span {
-  margin-top: 8px;
+  margin-top: 0.5rem;
 }
 
 #toggle-btn span:before,
@@ -94,35 +93,35 @@ BUTTON
   opacity: .8;
   height: 100%;
   width: 50%;
-  height: 4px;
+  height: 0.25rem;
   transition: .25s cubic-bezier(.6,0,.3,1);
   transform-origin: center center;
 }
 
 #toggle-btn span:before {
   left: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0.1875rem 0 0 0.1875rem;
 }
 
 #toggle-btn span:after {
   right: 0;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 0.1875rem 0.1875rem 0;
 }
 
 #toggle-btn.shown span:nth-of-type(1):before {
-  transform: translate3d(3px, 3.5px, 0) rotate(45deg);
+  transform: translate3d(0.1875rem, 0.2187rem, 0) rotate(45deg);
 }
 
 #toggle-btn.shown span:nth-of-type(1):after {
-  transform: translate3d(-3px, 3.5px, 0) rotate(-45deg);
+  transform: translate3d(-0.1875rem, 0.2187rem, 0) rotate(-45deg);
 }
 
 #toggle-btn.shown span:nth-of-type(3):before {
-  transform: translate3d(3px, -3.5px, 0) rotate(-45deg);
+  transform: translate3d(0.1875rem, -0.2187rem, 0) rotate(-45deg);
 }
 
 #toggle-btn.shown span:nth-of-type(3):after {
-  transform: translate3d(-3px, -3.5px, 0) rotate(45deg);
+  transform: translate3d(-0.1875rem, -0.2187rem, 0) rotate(45deg);
 }
 
 #toggle-btn.shown span:nth-of-type(2):before,
@@ -147,7 +146,7 @@ BUTTON
   content: '';
   transition: .2s .2s;
   position: absolute;
-  top: 3px;
+  top: 0.1875rem;
   left: 0;
   width: 100%;
   height: 100%;
@@ -191,7 +190,7 @@ nav ul {
 }
 
 nav li {
-  font-size: 30px;
+  font-size: 1.875rem;
   color: #212121;
   user-select: none;
   transform: translate(-20px,20px) scale(.9);
@@ -200,9 +199,14 @@ nav li {
   visibility: hidden;
   will-change: transform;
 }
+@media (max-width:768px){
+  nav li{
+    font-size: 1.25rem;
+  }
+}
 
 nav li + li {
-  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 #toggle-btn.shown ~ .wrapper nav li {
@@ -235,32 +239,32 @@ LINK EFFECT
 .link:after {
   position: absolute;
   content: '';
-  height: 3px;
+  height: 0.1875rem;
   width: 50%;
   background: #4ECA78;
-  top: calc(50% + 2px);
+  top: calc(50% + 0.125rem);
   transition: transform .3s cubic-bezier(.5,.5,0,1);
 }
 
 .link:before {
   left: 0;
-  transform: translateX(calc(-100% - 10px)) scaleX(0);
+  transform: translateX(calc(-100% - 0.625rem)) scaleX(0);
   transform-origin: left;
 }
 
 .link:after {
   right: 0;
-  transform: translateX(calc(100% + 10px)) scaleX(0);
+  transform: translateX(calc(100% + 0.625rem)) scaleX(0);
   transform-origin: right;
 }
 
 .link:hover:before {
-  transform: translateX(calc(-100% - 10px)) scaleX(1);
+  transform: translateX(calc(-100% - 0.625rem)) scaleX(1);
   transform-origin: right;
 }
 
 .link:hover:after {
-  transform: translateX(calc(100% + 10px)) scaleX(1);
+  transform: translateX(calc(100% + 0.625rem)) scaleX(1);
   transform-origin: left;
 }
 
@@ -278,7 +282,7 @@ CONTENT
   text-align: center;
   margin: auto;
   color: #fff;
-  text-shadow: 0 6px 18px rgba(0,0,0,.1);
+  text-shadow: 0 0.375rem 1.125rem rgba(0,0,0,.1);
 }
 
 
