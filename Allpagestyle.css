@@ -47,16 +47,29 @@ html, body{
   object-fit: cover;
   margin: auto auto;
 }
-
+@media  (min-width: 768px){
+  #carimg{
+    max-height:500px;
+    width: 500px;
+    object-fit: cover;
+    margin: auto auto;
+  }
+}
 .carousel{
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-max-height: calc(100% - 5vw);
-width: calc(90% - 5vw);
+height:100%;
+width:90%;
 overflow: hidden;
-margin-top: 30px;
+margin-top: 1,875rem;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: 30px;
+margin-bottom: 1,875rem;
+}
+@media  (min-width: 768px){
+  .carousel{
+ width:500px;
+ height:490px;
+  }
 }
 
 .image-container{
@@ -65,4 +78,60 @@ transform: translateX(0);
 transition: transform 0.5s ease-in-out;
 }
 /*Banner eddig*/
+/*Innen a cookie*/
+.container{
+  width:100%;
+  margin:auto;
+}
+.subcontainer{
+  width:85%;
+  margin:auto;
+}
+#cookies{
+  width:100%;
+  position: fixed;
+  bottom: 0;
+  color:white;
+  background-color: rgba(0,0,0,.7);
+  z-index: 1;
+  display:none;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;;
+  font-weight: 100;
 
+}
+.cookies{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.cookies a{
+  color:yellow;
+  font-weight: 500;
+  text-decoration: none;
+
+}
+#cookies-btn{
+  border-radius: 5px;
+  padding: 8px 12px 8px 12px;
+  font-size: 1rem;
+  cursor:pointer;
+  border:3px solid white;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  color:white
+}
+
+@media(max-width:1600px){
+  .container{
+    width:100%;
+  }
+}
+@media(max-width:1024px){
+  .cookies{
+    padding:10px 0;
+  }
+}
