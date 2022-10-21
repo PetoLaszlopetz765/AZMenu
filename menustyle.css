@@ -52,7 +52,7 @@ BUTTON
   left: calc(var(--offset-value)*0.0625rem);
   /*left: calc(50% - (var(--btn-size)/2*1px)); if you wish to center it */
   /*border-radius: 50%*/
-  background: #000000;
+  background:  black;
   cursor:pointer;
   margin: 0;
   padding: 0 0.93rem;
@@ -150,7 +150,7 @@ BUTTON
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,.1);
+  background:black;
   border-radius: inherit;
   filter: blur(5px);
   z-index: -2;
@@ -163,7 +163,8 @@ BUTTON
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  background: #0e0000;
+ /* background: #0e0000;*/
+  background:rgba(252, 252, 252, 0.2);
   z-index: -1;
 }
 

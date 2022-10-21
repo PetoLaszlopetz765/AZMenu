@@ -1,20 +1,19 @@
 html, body{
-  background: url('Assets/123.jfif') no-repeat center center fixed;
-  color:whitesmoke;
+  background: url('/Assets/pexels-pixabay-235985.jpg') no-repeat center center fixed;
+  box-sizing: border-box;
 }
-#page{
+.page{
+
   width:80%;
   margin-right:auto;
   margin-left:auto;
   box-shadow:2px 2px 20px #c8f3f9;
-  height:auto;
   background-color: hsla(0, 0%, 100%, .2);
-  position: absolute;
-  left: 0;
-  right: 0;
-  display: block;}
+  color:whitesmoke;
+  text-shadow: 1px 1px 5px black;
+}
 
-  #logoimg{
+  .logoimg{
     border-radius:100%;
     width: auto;
     border:1px solid silver;
@@ -23,11 +22,25 @@ html, body{
     height:30vh;
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right:auto;
+    top:0.5em;
     position: relative;
-    margin-top:5%;
+    margin-bottom: 1rem;
+
   }
-  #logoimg:hover {
+  .kepnev{
+   /* background-color: aqua;*/
+    text-align: center;
+  }
+  @media (min-width:768px) {
+    .kepnev{
+      max-width: 500px;
+      height:auto;
+      margin:5px;
+      float: left;
+    }
+  }
+  .logoimg:hover {
     transform: scale(1.1);
     filter: grayscale(5%);
     border:5px solid rgb(235, 118, 9);
@@ -38,6 +51,35 @@ html, body{
   #pikk:hover{
     color: #c8f3f9;
   }
+  .mapouter{
+    position:relative;
+    text-align:right;
+    width:80%;
+    height:auto;
+    margin:auto auto;
+  }
+  @media (min-width:768px) {
+    .mapouter{
+      position:absolute;
+      text-align:right;
+      width:40%;
+      height:40%;
+      right:0;
+      top:0;
+      margin-right:11%;
+      margin-top:1em;
+    }    
+  }
+  .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width:100%;
+    height:auto;
+}
+.gmap_iframe {
+  width:100%!important;
+  height:auto!important;}
+
 /*Banner*/
 #carimg{
   height:100%;
@@ -65,8 +107,7 @@ overflow: hidden;
 margin-top: 1,875rem;
 margin-left: auto;
 margin-right: auto;
-margin-bottom: 1,875rem;
-background-color: pink;
+bottom: 1,875rem;
 }
 @media  (min-width: 768px){
   .carousel{
@@ -141,3 +182,8 @@ transition: transform 0.5s ease-in-out;
   }
 }
 /*eddig cookies*/
+.socicon{
+  display: inline;
+  color:blue;
+  padding:1rem;
+}
