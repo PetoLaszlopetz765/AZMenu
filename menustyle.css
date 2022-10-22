@@ -50,9 +50,9 @@ BUTTON
   width: calc(var(--btn-size)*0.0625rem);
   bottom: calc((var(--offset-value))*0.0625rem);
   left: calc(var(--offset-value)*0.0625rem);
-  /*left: calc(50% - (var(--btn-size)/2*1px)); if you wish to center it */
-  /*border-radius: 50%*/
-  background:  black;
+ /* left: calc(50% - (var(--btn-size)/2*1px)); if you wish to center it */
+  border-radius: 30%;
+  background:  rgb(17, 17, 17);
   cursor:pointer;
   margin: 0;
   padding: 0 0.93rem;
@@ -207,7 +207,7 @@ nav li {
 }
 
 nav li + li {
-  margin-top: 1.875rem;
+  margin-top: 1rem;
 }
 
 #toggle-btn.shown ~ .wrapper nav li {
