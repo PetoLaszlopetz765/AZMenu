@@ -203,3 +203,18 @@ transition: transform 0.5s ease-in-out;
     margin-right: 5%;
   }
 }
+.bigger{
+  text-align: center;
+  padding:0.5em;
+}
+.dart{
+  text-align: center;
+}
+.arlap{
+  padding:1em;
+}
+.page p{
+  width:90%;
+  margin-left:auto;
+  margin-right:auto;
+}
