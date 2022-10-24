@@ -1,24 +1,21 @@
 html, body{
-  background: url('Assets/c0jeLCw-cool-water-background.jpg') no-repeat center center fixed;
+  background: url('Assets/wp3519264-black-and-orange-wallpaper.png') no-repeat center center fixed;
   box-sizing: border-box;
 }
 .page{
-
   width:80%;
   margin-right:auto;
   margin-left:auto;
   box-shadow:2px 2px 20px #c8f3f9;
-  background-color: rgba(71, 12, 12, 0.2);
+ background-color: rgba(252, 251, 251, 0.15);
   color:whitesmoke;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 4px black;
 }
-
   .logoimg{
     border-radius:100%;
     width: auto;
     border:1px solid silver;
     transition: all 0.5s ease-in-out;
-    filter: grayscale(50%);
     height:30vh;
     display: block;
     margin-left: auto;
@@ -44,6 +41,7 @@ html, body{
     transform: scale(1.1);
     filter: grayscale(5%);
     border:5px solid rgb(235, 118, 9);
+    filter:sepia(100%);
   }
   #pikk{
     margin-top: 30%;
