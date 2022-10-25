@@ -58,6 +58,7 @@ html, body{
   max-height:500px;
   object-fit: cover;
   margin: auto auto;
+  padding:1rem;
 }
 @media  (min-width: 768px){
   #carimg{
