@@ -11,11 +11,6 @@ html, body{
   color:whitesmoke;
   text-shadow: 1px 4px black;
 }
-@media (min-width:768px) {
-  .page{
-    width:100%;
-  }
-}
   .logoimg{
     border-radius:100%;
     width: auto;
@@ -32,15 +27,6 @@ html, body{
   .kepnev{
    /* background-color: aqua;*/
     text-align: center;
-  }
-
-  @media (min-width:768px) {
-    .kepnev{
-      max-width: 60%;
-      height:auto;
-      margin:1rem;
-      float: left;
-    }
   }
   .logoimg:hover {
     transform: scale(1.1);
@@ -65,14 +51,6 @@ html, body{
   margin: auto auto;
   padding:1rem;
 }
-@media  (min-width: 768px){
-  #carimg{
-    height:500px;
-    width: 500px;
-    object-fit: cover;
-    margin: auto auto;
-  }
-}
 .carousel{
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 height:100%;
@@ -84,23 +62,6 @@ margin-top: 1,875rem;
 margin-left: auto;
 margin-right: auto;
 bottom: 1,875rem;
-}
-@media  (min-width: 768px){
-  .carousel{
- width:500px;
- height:490px;
- margin-right: 40px;
- bottom:0;
- right:0;
- left:0;
- margin-bottom: 2%;
- position: absolute;
-  }
-}
-@media  (min-width: 1024px){
-  .carousel{
-    display:none;
-  }
 }
 .image-container{
 display: flex;
@@ -187,29 +148,6 @@ transition: transform 0.5s ease-in-out;
 .gmap_iframe {
   height:400px!important;}
 
-@media (min-width:768px) {
-  #terkep{
-    position:absolute;
-    right:0;
-    top:0;
-    width: 10%;
-    height: 5%;
-    padding-bottom: 1rem;
-  }
-}
-@media (min-width:768px) {
-  .mapouter{
-    position:absolute;
-    right:0;
-    top:0;
-    width:40%;
-    height:5px;
-    max-width:40%;
-    max-height: 10%;
-    margin-top:8%;
-    margin-right: 5%;
-  }
-}
 .bigger{
   text-align: center;
   padding:0.5em;
