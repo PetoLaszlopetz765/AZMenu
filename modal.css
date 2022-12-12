@@ -3,8 +3,8 @@
   border-radius: 5px;
   cursor: zoom-in;
   transition: 0.3s;
-  margin-left:1.2rem;
-  margin-right:1.2rem;
+  margin-left:auto;
+  margin-right:auto;
   width:95%;
   max-width: 350px;
   margin-bottom: 1rem;
@@ -85,8 +85,4 @@
   .modal-content {
     width: 100%;
   }
-}
-.center{
-    margin-right:auto;
-    margin-left:auto;
 }
