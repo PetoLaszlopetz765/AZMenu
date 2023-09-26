@@ -1,94 +1,189 @@
 <!DOCTYPE html>
+
 <html lang="hu">
 
+
+
 <head>
+
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width" initial-scale=1.0" />
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
   <title>A-Z AUTÓ PÉCS | GUMISZERVIZ | KOZMETIKA | KLÍMASZERVIZ</title>
+
   <link href="style.css" rel="stylesheet" type="text/css">
+
   <link href="menustyle.css" rel="stylesheet" type="text/css">
+
   <link href="modal.css" rel="stylesheet" type="text/css">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@1,500&display=swap"
+
     rel="stylesheet">
+
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
 </head>
+
+
 
 <body>
 
+
+
   <div id="nav-bg" class="btn"></div>
+
   <div id="toggle-btn" class="btn">
 
+
+
     <span></span>
+
     <span></span>
+
     <span></span>
+
     <p id="pikk">MENÜ</p>
+
   </div>
+
+
 
   <div class="wrapper">
+
     <nav>
+
       <ul>
+
         <li><img class="logoimg" src="Assets/logo.jpeg" alt="logo"></li>
+
         <li><a class="link" href="index.html">Kapcsolat</a></li>
+
         <li><a class="link" href="gumi.html">Gumiszerviz</a></li>
+
         <li><a class="link" href="kozmetika.html">Autó kozmetika</a></li>
+
         <li><a class="link" href="klima.html">Klímaszerviz</a></li>
+
+        <li><a class="link" href="galery.html">Galéria</a></li>
+
       </ul>
+
     </nav>
+
     <script src="js/menu.js"></script>
 
+
+
     <div id="bemutat">
+
       <div class="page">
+
         <div class="gumiszerviz"></div>
+
         <h2 class="bigger"><br>Autógumi szerviz<br></h2>
+
         <p>Vállajuk gépjárművek gumiabroncsainak szerelését, centírozását. Részletes ár táblázatunk az
+
           alábbiakban:<br><br>
+
         </p>
+
         <ul class="dart">
+
           <li class="socicon"><a class="adart social-icon" href="mailto:hungarybikers@gmail.com"><i
+
                 class="fa fa-2x fa-envelope-o" aria-hidden="true"></i></a></li>
+
           <li class="socicon"><a class="adart social-icon"
+
               href="https://www.facebook.com/autokozmetika.gumiszerviz.pecs/" title="Facebook"><i
+
                 class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+
         </ul>
+
         <br>
+
         <!--Innen a tábla--->
+
         <!-- Trigger the Modal -->
+
         <div class="center">
+
           <img id="myImg" src="Assets/arlap2.jpg" alt="Gumi szerelés árlap">
+
           <!-- The Modal -->
+
           <div id="myModal" class="modal">
 
+
+
             <!-- The Close Button -->
+
             <span class="close">&times;</span>
 
+
+
             <!-- Modal Content (The Image) -->
+
             <img class="modal-content" id="img01">
 
+
+
             <!-- Modal Caption (Image Text) -->
+
             <div id="caption"></div>
+
             <script src="js/modal.js"></script>
+
           </div>
+
         </div>
+
         <!--Eddig a tábla--->
+
         <!--Banner-->
+
         <div class="carousel">
+
           <div class="image-container" id="imgs">
+
             <img id="carimg"
+
               src="Assets/G1.jpg" alt="first-image">
+
             <img id="carimg"
+
               src="Assets/G2.jpg" alt="second-image">
+
             <img id="carimg"
+
               src="Assets/G3.jpg" alt="third-image">
+
             <img id="carimg"
+
               src="Assets/G4.jpg" alt="fourth-image">
+
           </div>
+
           <script src="js/banner.js"></script>
+
         </div>
+
         <br>
+
       </div>
+
     </div>
+
   </div>
+
 </body>
+
 </html>

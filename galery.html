@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A-Z AUTÓ PÉCS | GUMISZERVIZ | KOZMETIKA | KLÍMASZERVIZ</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="menustyle.css" rel="stylesheet" type="text/css">
+  <link href="modal.css" rel="stylesheet" type="text/css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    /* CSS a kis méretű képekhez */
+    .thumbnail {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      cursor: pointer;
+      display: block;
+      margin: 0 auto;
+      padding: 5px; /* Térköz a képek között */
+    }
+
+    /* CSS a kinagyított képekhez */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      z-index: 1;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      margin: auto;
+      display: block;
+    }
+
+    /* Mobiltelefon specifikus stílusok */
+    @media screen and (max-width: 768px) {
+      .thumbnail {
+        max-width: 50%;
+      }
+
+      .lightbox img {
+        max-width: 80%;
+        max-height: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="nav-bg" class="btn"></div>
+  <div id="toggle-btn" class="btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    <p id="pikk">MENÜ</p>
+  </div>
+  <div class="wrapper">
+    <nav>
+      <ul>
+        <li><img class="logoimg" src="Assets/logo.jpeg" alt="logo"></li>
+        <li><a class="link" href="index.html">Kapcsolat</a></li>
+        <li><a class="link" href="gumi.html">Gumiszerviz</a></li>
+        <li><a class="link" href="kozmetika.html">Autó kozmetika</a></li>
+        <li><a class="link" href="klima.html">Klímaszerviz</a></li>
+        <li><a class="link" href="galery.html">Galéria</a></li>
+      </ul>
+    </nav>
+    <script src="js/menu.js"></script>
+    <div id="bemutat">
+      <div class="page">
+        <div class="gumiszerviz"></div>
+        <h2 class="bigger"><br>Autógumi szerviz<br><br>Galéria</h2>
+        <ul class="dart">
+          <li class="socicon"><a class="adart social-icon" href="mailto:hungarybikers@gmail.com"><i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i></a></li>
+          <li class="socicon"><a class="adart social-icon" href="https://www.facebook.com/autokozmetika.gumiszerviz.pecs/" title="Facebook"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
+        </ul>
+        <br>
+        <!-- Galéria képek -->
+        <div class="gallery">
+          <img class="thumbnail" src="Assets/G1.jpg" alt="Kép 1">
+          <img class="thumbnail" src="Assets/G2.jpg" alt="Kép 2">
+          <img class="thumbnail" src="Assets/G3.jpg" alt="Kép 3">
+          <img class="thumbnail" src="Assets/G4.jpg" alt="Kép 4">
+          <img class="thumbnail" src="Assets/I1.jpg" alt="Kép 5">
+          <img class="thumbnail" src="Assets/I2.jpg" alt="Kép 6">
+          <img class="thumbnail" src="Assets/I3.jpg" alt="Kép 7">
+          <img class="thumbnail" src="Assets/I4.jpg" alt="Kép 8">
+          <img class="thumbnail" src="Assets/K1.jpg" alt="Kép 9">
+          <img class="thumbnail" src="Assets/K2.jpg" alt="Kép 10">
+          <img class="thumbnail" src="Assets/K3.jpg" alt="Kép 11">
+          <img class="thumbnail" src="Assets/K4.jpg" alt="Kép 12">
+          <img class="thumbnail" src="Assets/Ko1.jpg" alt="Kép 13">
+          <img class="thumbnail" src="Assets/Ko2.jpg" alt="Kép 14">
+          <img class="thumbnail" src="Assets/Ko3.jpg" alt="Kép 15">
+          <img class="thumbnail" src="Assets/kep1.jpeg" alt="Kép 16">
+          <img class="thumbnail" src="Assets/kep2.jpeg" alt="Kép 17">
+          <img class="thumbnail" src="Assets/kep3.jpeg" alt="Kép 18">
+          <img class="thumbnail" src="Assets/kep4.jpeg" alt="Kép 19">
+          <img class="thumbnail" src="Assets/kep5.jpg" alt="Kép 20">
+          <img class="thumbnail" src="Assets/kep6.jpg" alt="Kép 21">
+          <img class="thumbnail" src="Assets/kep7.jpg" alt="Kép 22">
+          <img class="thumbnail" src="Assets/kep8.jpg" alt="Kép 23">
+          <img class="thumbnail" src="Assets/kep9.jpg" alt="Kép 24">
+          <img class="thumbnail" src="Assets/kep10.jpg" alt="Kép 25">
+          <img class="thumbnail" src="Assets/kep11.jpg" alt="Kép 26">
+          <img class="thumbnail" src="Assets/kep12.jpg" alt="Kép 27">
+          <img class="thumbnail" src="Assets/kep13.jpg" alt="Kép 28">
+          <!-- További képek hozzáadása -->
+        </div>
+        <!-- Kinagyított képek megjelenítése -->
+        <div class="lightbox" id="lightbox">
+          <span class="close" id="close">&times;</span>
+          <img id="lightbox-image">
+        </div>
+        <br>
+      </div>
+    </div>
+  </div>
+  <script>
+    // JavaScript a kinagyítás kezeléséhez
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const closeButton = document.getElementById('close');
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImage.src = thumbnail.src;
+      });
+    });
+
+    closeButton.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
