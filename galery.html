@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <style>
     /* CSS a kis méretű képekhez */
     .thumbnail {
@@ -23,35 +24,10 @@
       padding: 5px; /* Térköz a képek között */
     }
 
-    /* CSS a kinagyított képekhez */
-    .lightbox {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      text-align: center;
-      z-index: 1;
-    }
-
-    .lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-      margin: auto;
-      display: block;
-    }
-
     /* Mobiltelefon specifikus stílusok */
     @media screen and (max-width: 768px) {
       .thumbnail {
         max-width: 50%;
-      }
-
-      .lightbox img {
-        max-width: 80%;
-        max-height: 80%;
       }
     }
   </style>
@@ -87,62 +63,40 @@
         <br>
         <!-- Galéria képek -->
         <div class="gallery">
-          <img class="thumbnail" src="Assets/G1.jpg" alt="Kép 1">
-          <img class="thumbnail" src="Assets/G2.jpg" alt="Kép 2">
-          <img class="thumbnail" src="Assets/G3.jpg" alt="Kép 3">
-          <img class="thumbnail" src="Assets/G4.jpg" alt="Kép 4">
-          <img class="thumbnail" src="Assets/I1.jpg" alt="Kép 5">
-          <img class="thumbnail" src="Assets/I2.jpg" alt="Kép 6">
-          <img class="thumbnail" src="Assets/I3.jpg" alt="Kép 7">
-          <img class="thumbnail" src="Assets/I4.jpg" alt="Kép 8">
-          <img class="thumbnail" src="Assets/K1.jpg" alt="Kép 9">
-          <img class="thumbnail" src="Assets/K2.jpg" alt="Kép 10">
-          <img class="thumbnail" src="Assets/K3.jpg" alt="Kép 11">
-          <img class="thumbnail" src="Assets/K4.jpg" alt="Kép 12">
-          <img class="thumbnail" src="Assets/Ko1.jpg" alt="Kép 13">
-          <img class="thumbnail" src="Assets/Ko2.jpg" alt="Kép 14">
-          <img class="thumbnail" src="Assets/Ko3.jpg" alt="Kép 15">
-          <img class="thumbnail" src="Assets/kep1.jpeg" alt="Kép 16">
-          <img class="thumbnail" src="Assets/kep2.jpeg" alt="Kép 17">
-          <img class="thumbnail" src="Assets/kep3.jpeg" alt="Kép 18">
-          <img class="thumbnail" src="Assets/kep4.jpeg" alt="Kép 19">
-          <img class="thumbnail" src="Assets/kep5.jpg" alt="Kép 20">
-          <img class="thumbnail" src="Assets/kep6.jpg" alt="Kép 21">
-          <img class="thumbnail" src="Assets/kep7.jpg" alt="Kép 22">
-          <img class="thumbnail" src="Assets/kep8.jpg" alt="Kép 23">
-          <img class="thumbnail" src="Assets/kep9.jpg" alt="Kép 24">
-          <img class="thumbnail" src="Assets/kep10.jpg" alt="Kép 25">
-          <img class="thumbnail" src="Assets/kep11.jpg" alt="Kép 26">
-          <img class="thumbnail" src="Assets/kep12.jpg" alt="Kép 27">
-          <img class="thumbnail" src="Assets/kep13.jpg" alt="Kép 28">
+          <a href="Assets/G1.jpg" data-fancybox="gallery" data-caption="Kép 1"><img class="thumbnail" src="Assets/G1.jpg" alt="Kép 1"></a>
+          <a href="Assets/G2.jpg" data-fancybox="gallery" data-caption="Kép 2"><img class="thumbnail" src="Assets/G2.jpg" alt="Kép 2"></a>
+          <a href="Assets/G3.jpg" data-fancybox="gallery" data-caption="Kép 3"><img class="thumbnail" src="Assets/G3.jpg" alt="Kép 3"></a>
+          <a href="Assets/G4.jpg" data-fancybox="gallery" data-caption="Kép 4"><img class="thumbnail" src="Assets/G4.jpg" alt="Kép 4"></a>
+          <a href="Assets/I1.jpg" data-fancybox="gallery" data-caption="Kép 5"><img class="thumbnail" src="Assets/I1.jpg" alt="Kép 5"></a>
+          <a href="Assets/I2.jpg" data-fancybox="gallery" data-caption="Kép 6"><img class="thumbnail" src="Assets/I2.jpg" alt="Kép 6"></a>
+          <a href="Assets/I3.jpg" data-fancybox="gallery" data-caption="Kép 7"><img class="thumbnail" src="Assets/I3.jpg" alt="Kép 7"></a>
+          <a href="Assets/I4.jpg" data-fancybox="gallery" data-caption="Kép 8"><img class="thumbnail" src="Assets/I4.jpg" alt="Kép 8"></a>
+          <a href="Assets/K1.jpg" data-fancybox="gallery" data-caption="Kép 9"><img class="thumbnail" src="Assets/K1.jpg" alt="Kép 9"></a>
+          <a href="Assets/K2.jpg" data-fancybox="gallery" data-caption="Kép 10"><img class="thumbnail" src="Assets/K2.jpg" alt="Kép 10"></a>
+          <a href="Assets/K3.jpg" data-fancybox="gallery" data-caption="Kép 11"><img class="thumbnail" src="Assets/K3.jpg" alt="Kép 11"></a>
+          <a href="Assets/K4.jpg" data-fancybox="gallery" data-caption="Kép 12"><img class="thumbnail" src="Assets/K4.jpg" alt="Kép 12"></a>
+          <a href="Assets/Ko1.jpg" data-fancybox="gallery" data-caption="Kép 13"><img class="thumbnail" src="Assets/Ko1.jpg" alt="Kép 13"></a>
+          <a href="Assets/Ko2.jpg" data-fancybox="gallery" data-caption="Kép 14"><img class="thumbnail" src="Assets/Ko2.jpg" alt="Kép 14"></a>
+          <a href="Assets/Ko3.jpg" data-fancybox="gallery" data-caption="Kép 15"><img class="thumbnail" src="Assets/Ko3.jpg" alt="Kép 15"></a>
+          <a href="Assets/kep1.jpeg" data-fancybox="gallery" data-caption="Kép 16"><img class="thumbnail" src="Assets/kep1.jpeg" alt="Kép 16"></a>
+          <a href="Assets/kep2.jpeg" data-fancybox="gallery" data-caption="Kép 17"><img class="thumbnail" src="Assets/kep2.jpeg" alt="Kép 17"></a>
+          <a href="Assets/kep3.jpeg" data-fancybox="gallery" data-caption="Kép 18"><img class="thumbnail" src="Assets/kep3.jpeg" alt="Kép 18"></a>
+          <a href="Assets/kep4.jpeg" data-fancybox="gallery" data-caption="Kép 19"><img class="thumbnail" src="Assets/kep4.jpeg" alt="Kép 19"></a>
+          <a href="Assets/kep5.jpg" data-fancybox="gallery" data-caption="Kép 20"><img class="thumbnail" src="Assets/kep5.jpg" alt="Kép 20"></a>
+          <a href="Assets/kep6.jpg" data-fancybox="gallery" data-caption="Kép 21"><img class="thumbnail" src="Assets/kep6.jpg" alt="Kép 21"></a>
+          <a href="Assets/kep7.jpg" data-fancybox="gallery" data-caption="Kép 22"><img class="thumbnail" src="Assets/kep7.jpg" alt="Kép 22"></a>
+          <a href="Assets/kep8.jpg" data-fancybox="gallery" data-caption="Kép 23"><img class="thumbnail" src="Assets/kep8.jpg" alt="Kép 23"></a>
+          <a href="Assets/kep9.jpg" data-fancybox="gallery" data-caption="Kép 24"><img class="thumbnail" src="Assets/kep9.jpg" alt="Kép 24"></a>
+          <a href="Assets/kep10.jpg" data-fancybox="gallery" data-caption="Kép 25"><img class="thumbnail" src="Assets/kep10.jpg" alt="Kép 25"></a>
+          <a href="Assets/kep11.jpg" data-fancybox="gallery" data-caption="Kép 26"><img class="thumbnail" src="Assets/kep11.jpg" alt="Kép 26"></a>
+          <a href="Assets/kep12.jpg" data-fancybox="gallery" data-caption="Kép 27"><img class="thumbnail" src="Assets/kep12.jpg" alt="Kép 27"></a>
+          <a href="Assets/kep13.jpg" data-fancybox="gallery" data-caption="Kép 28"><img class="thumbnail" src="Assets/kep13.jpg" alt="Kép 28"></a>
           <!-- További képek hozzáadása -->
         </div>
-        <!-- Kinagyított képek megjelenítése -->
-        <div class="lightbox" id="lightbox">
-          <span class="close" id="close">&times;</span>
-          <img id="lightbox-image">
-        </div>
-        <br>
       </div>
     </div>
   </div>
-  <script>
-    // JavaScript a kinagyítás kezeléséhez
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImage = document.getElementById('lightbox-image');
-    const closeButton = document.getElementById('close');
-
-    thumbnails.forEach(thumbnail => {
-      thumbnail.addEventListener('click', () => {
-        lightbox.style.display = 'block';
-        lightboxImage.src = thumbnail.src;
-      });
-    });
-
-    closeButton.addEventListener('click', () => {
-      lightbox.style.display = 'none';
-    });
-  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 </body>
 </html>
